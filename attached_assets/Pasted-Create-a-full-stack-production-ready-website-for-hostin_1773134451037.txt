@@ -1,0 +1,261 @@
+Create a full-stack production-ready website for hosting free downloadable ebooks.
+
+GENERAL REQUIREMENTS
+
+The website must be fully functional without relying on third-party authentication systems.
+
+All authentication, logging, and admin permissions must be handled within the site's own backend.
+
+The system must store all data in a database controlled by the site.
+
+The website must be easy to edit later to add new ebooks.
+
+TECH STACK Use:
+
+Next.js frontend
+
+Node.js backend
+
+PostgreSQL database
+
+TailwindCSS for styling
+
+STRUCTURE OF THE WEBSITE
+
+Pages:
+
+Home Page
+
+Ebook Library Page
+
+Individual Ebook Page
+
+Contact Page
+
+Login Page (hidden entry point)
+
+Admin Dashboard (protected route)
+
+HOME PAGE
+
+Clean modern design
+
+Brief introduction to the ebook platform
+
+Featured ebooks section
+
+Button linking to the Ebook Library
+
+EBOOK LIBRARY PAGE
+
+Display all ebooks in a grid
+
+Each ebook card includes:
+
+Cover image
+
+Title
+
+Short description
+
+Read button
+
+Download button
+
+View count
+
+Download count
+
+INDIVIDUAL EBOOK PAGE
+
+Full ebook description
+
+Cover image
+
+Read online option
+
+Download button
+
+Display total views
+
+Display total downloads
+
+CONTACT PAGE
+
+Contact form with fields:
+
+Name
+
+Email
+
+Instagram
+
+Store submissions in database
+
+LOGIN SYSTEM
+
+Create a secure login system using hashed passwords
+
+Use JWT or session authentication
+
+No public signup page
+
+Only admin login exists
+
+Login page must not appear in navigation
+
+Login page should only be accessible via a direct URL
+
+ADMIN DASHBOARD This page must only be visible if the logged-in user is an admin.
+
+Features:
+
+Upload new ebooks
+
+Edit ebook title and description
+
+Upload ebook PDF
+
+Upload cover image
+
+Delete ebooks
+
+View analytics
+
+EBOOK MANAGEMENT Admin must be able to:
+
+Add new ebook entries
+
+Upload PDF files
+
+Edit existing ebooks
+
+Remove ebooks
+
+LOGGING AND ANALYTICS SYSTEM
+
+The site must automatically track:
+
+Website analytics:
+
+Total visitors
+
+Unique visitors
+
+Page views
+
+Per ebook analytics:
+
+Number of views
+
+Number of downloads
+
+Store logs in database tables.
+
+DATABASE STRUCTURE
+
+Create tables:
+
+users
+
+id
+
+username
+
+password_hash
+
+role
+
+ebooks
+
+id
+
+title
+
+description
+
+pdf_url
+
+cover_image_url
+
+view_count
+
+download_count
+
+created_at
+
+downloads
+
+id
+
+ebook_id
+
+timestamp
+
+visitor_ip
+
+views
+
+id
+
+ebook_id
+
+timestamp
+
+visitor_ip
+
+contact_messages
+
+id
+
+name
+
+email
+
+message
+
+timestamp
+
+SECURITY REQUIREMENTS
+
+Admin dashboard must require authentication
+
+Unauthorized users must be redirected
+
+Passwords must be hashed
+
+File uploads must be validated
+
+Prevent direct access to admin routes
+
+FILE STORAGE
+
+Store ebook PDFs and cover images in a secure server directory or storage bucket.
+
+Ensure downloads update the download_count.
+
+ADS SYSTEM (for future use)
+
+Add placeholder ad sections on pages
+
+Allow easy insertion of ad code later
+
+DESIGN REQUIREMENTS
+
+Clean modern UI
+
+Responsive design
+
+Minimalist layout
+
+Optimized for speed
+
+FINAL REQUIREMENT
+
+Provide clear instructions in the code comments explaining how to:
+
+add new ebooks
+
+access the admin dashboard
+
+edit the site later
