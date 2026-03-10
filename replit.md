@@ -5,9 +5,9 @@ Growth Lane is a full-stack production-ready website for hosting free downloadab
 ## How to Access the Admin Dashboard
 
 1. Navigate to `/login` manually in the browser (this page is hidden from the main navigation).
-2. Use the default admin credentials:
-   - **Username**: `admin`
-   - **Password**: `admin123`
+2. Use your admin credentials:
+   - **Username**: `Archus`
+   - **Password**: `Archus32727`
 3. After logging in, you will be redirected to the Admin Dashboard (`/admin`).
 
 ## How to Add New Ebooks

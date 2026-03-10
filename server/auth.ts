@@ -78,15 +78,15 @@ export function setupAuth(app: Express) {
 
   // Create admin user if it doesn't exist
   (async () => {
-    const adminExists = await storage.getUserByUsername("admin");
+    const adminExists = await storage.getUserByUsername("Archus");
     if (!adminExists) {
-      const passwordHash = await hashPassword("admin123");
+      const passwordHash = await hashPassword("Archus32727");
       await storage.createUser({
-        username: "admin",
+        username: "Archus",
         passwordHash,
         role: "admin",
       });
-      console.log("Created default admin user: admin / admin123");
+      console.log("Created default admin user: Archus / Archus32727");
     }
   })();
 }
