@@ -1,0 +1,52 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K6:03:22 AM [express] serving on port 5000
+6:03:27 AM [express] GET /api/ebooks 200 in 4ms :: [{"id":3,"title":"Unlock Your Confidence","description":"The Ultimate Guide Guide for Teens to own School and Life","pdfUrl":"/uploads/ebooks/pdf-1773140878252-164634021.pdf","coverImageUrl":"/uploads/covers/coverImage-1773140874730-711734748.png","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T11:07:59.030Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/placeholder.pdf","coverImageUrl":"/uploads/covers/placeholder.png","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+6:03:27 AM [express] POST /api/analytics/pageview 200 in 9ms :: {"success":true}
+6:03:29 AM [express] GET /api/ebooks 200 in 7ms :: [{"id":3,"title":"Unlock Your Confidence","description":"The Ultimate Guide Guide for Teens to own School and Life","pdfUrl":"/uploads/ebooks/pdf-1773140878252-164634021.pdf","coverImageUrl":"/uploads/covers/coverImage-1773140874730-711734748.png","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T11:07:59.030Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/placeholder.pdf","coverImageUrl":"/uploads/covers/placeholder.png","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+6:03:29 AM [express] POST /api/analytics/pageview 200 in 7ms :: {"success":true}
+6:05:01 AM [express] GET /api/ebooks 304 in 7ms :: [{"id":3,"title":"Unlock Your Confidence","description":"The Ultimate Guide Guide for Teens to own School and Life","pdfUrl":"/uploads/ebooks/pdf-1773140878252-164634021.pdf","coverImageUrl":"/uploads/covers/coverImage-1773140874730-711734748.png","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T11:07:59.030Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/placeholder.pdf","coverImageUrl":"/uploads/covers/placeholder.png","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+6:05:01 AM [express] POST /api/analytics/pageview 200 in 11ms :: {"success":true}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:09:19 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/EbookCard.tsx, /src/index.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:09:30 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/EbookDetail.tsx, /src/index.css[22m

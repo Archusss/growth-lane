@@ -1,0 +1,38 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0KCreated default admin user: admin / admin123
+9:28:40 AM [express] serving on port 5000
+9:28:49 AM [express] GET /api/ebooks 200 in 6ms :: [{"id":1,"title":"The Great Gatsby","description":"A classic novel by F. Scott Fitzgerald.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+9:28:49 AM [express] POST /api/analytics/pageview 200 in 7ms :: {"success":true}
+9:28:54 AM [express] POST /api/analytics/pageview 200 in 5ms :: {"success":true}
+9:28:54 AM [express] GET /api/ebooks 200 in 2ms :: [{"id":1,"title":"The Great Gatsby","description":"A classic novel by F. Scott Fitzgerald.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+9:29:09 AM [express] POST /api/analytics/pageview 200 in 26ms :: {"success":true}
+9:29:16 AM [express] POST /api/analytics/pageview 200 in 7ms :: {"success":true}
+9:29:32 AM [express] POST /api/analytics/pageview 200 in 17ms :: {"success":true}
+9:29:33 AM [express] POST /api/analytics/pageview 200 in 4ms :: {"success":true}
+9:29:35 AM [express] GET /api/ebooks/2 200 in 3ms :: {"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}
+9:29:35 AM [express] POST /api/analytics/pageview 200 in 6ms :: {"success":true}
+9:29:35 AM [express] POST /api/ebooks/2/view 200 in 9ms :: {"success":true}
+9:30:57 AM [express] POST /api/analytics/pageview 200 in 43ms :: {"success":true}
+9:31:05 AM [express] POST /api/analytics/pageview 200 in 4ms :: {"success":true}
+9:31:15 AM [express] GET /api/auth/me 401 in 1ms :: {"message":"Not logged in"}
+9:31:15 AM [express] GET /api/analytics/overview 401 in 0ms :: {"message":"Unauthorized"}
+9:31:15 AM [express] GET /api/ebooks 200 in 2ms :: [{"id":1,"title":"The Great Gatsby","description":"A classic novel by F. Scott Fitzgerald.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+9:31:15 AM [express] GET /api/contact 401 in 1ms :: {"message":"Unauthorized"}
+9:32:03 AM [express] POST /api/auth/login 200 in 127ms :: {"message":"Logged in successfully"}
+9:32:04 AM [express] GET /api/auth/me 200 in 7ms :: {"id":1,"username":"admin","role":"admin"}
+9:32:04 AM [express] GET /api/analytics/overview 200 in 8ms :: {"totalVisitors":9,"uniqueVisitors":3,"pageViews":9}
+9:32:04 AM [express] GET /api/contact 200 in 16ms :: []
+9:34:22 AM [express] GET /api/ebooks 304 in 6ms :: [{"id":1,"title":"The Great Gatsby","description":"A classic novel by F. Scott Fitzgerald.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+9:34:22 AM [express] POST /api/analytics/pageview 200 in 8ms :: {"success":true}
+9:34:29 AM [express] GET /api/auth/me 304 in 6ms :: {"id":1,"username":"admin","role":"admin"}
+9:34:29 AM [express] GET /api/analytics/overview 200 in 6ms :: {"totalVisitors":10,"uniqueVisitors":4,"pageViews":10}
+9:34:29 AM [express] GET /api/contact 304 in 6ms :: []
+9:34:29 AM [express] GET /api/ebooks 304 in 7ms :: [{"id":1,"title":"The Great Gatsby","description":"A classic novel by F. Scott Fitzgerald.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+9:34:31 AM [express] POST /api/auth/logout 200 in 10ms :: {"message":"Logged out successfully"}
+9:34:32 AM [express] GET /api/auth/me 401 in 5ms :: {"message":"Not logged in"}
+9:34:32 AM [express] GET /api/ebooks 304 in 5ms :: [{"id":1,"title":"The Great Gatsby","description":"A classic novel by F. Scott Fitzgerald.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+9:34:32 AM [express] GET /api/contact 401 in 4ms :: {"message":"Unauthorized"}
+9:34:32 AM [express] GET /api/analytics/overview 401 in 9ms :: {"message":"Unauthorized"}

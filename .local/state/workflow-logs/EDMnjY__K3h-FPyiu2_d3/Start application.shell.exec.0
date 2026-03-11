@@ -1,0 +1,31 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0KCreated default admin user: Archus / Archus32727
+9:36:13 AM [express] serving on port 5000
+9:36:25 AM [express] GET /api/ebooks 304 in 9ms :: [{"id":1,"title":"The Great Gatsby","description":"A classic novel by F. Scott Fitzgerald.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+9:36:25 AM [express] POST /api/analytics/pageview 200 in 9ms :: {"success":true}
+9:36:41 AM [express] GET /api/contact 401 in 5ms :: {"message":"Unauthorized"}
+9:36:41 AM [express] GET /api/auth/me 401 in 8ms :: {"message":"Not logged in"}
+9:36:41 AM [express] GET /api/analytics/overview 401 in 5ms :: {"message":"Unauthorized"}
+9:36:41 AM [express] GET /api/ebooks 304 in 7ms :: [{"id":1,"title":"The Great Gatsby","description":"A classic novel by F. Scott Fitzgerald.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+9:36:50 AM [express] POST /api/auth/login 401 in 6ms
+9:37:00 AM [express] POST /api/auth/login 200 in 56ms :: {"message":"Logged in successfully"}
+9:37:00 AM [express] GET /api/auth/me 200 in 5ms :: {"id":2,"username":"Archus","role":"admin"}
+9:37:01 AM [express] GET /api/analytics/overview 200 in 15ms :: {"totalVisitors":11,"uniqueVisitors":4,"pageViews":11}
+9:37:01 AM [express] GET /api/contact 304 in 16ms :: []
+9:37:30 AM [express] DELETE /api/ebooks/1 204 in 9ms
+9:37:30 AM [express] GET /api/ebooks 200 in 11ms :: [{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+10:07:19 AM [express] GET /api/ebooks 304 in 16ms :: [{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+10:07:19 AM [express] POST /api/analytics/pageview 200 in 17ms :: {"success":true}
+10:07:26 AM [express] GET /api/ebooks 304 in 13ms :: [{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+10:07:26 AM [express] GET /api/auth/me 304 in 10ms :: {"id":2,"username":"Archus","role":"admin"}
+10:07:26 AM [express] GET /api/contact 304 in 16ms :: []
+10:07:26 AM [express] GET /api/analytics/overview 200 in 17ms :: {"totalVisitors":12,"uniqueVisitors":4,"pageViews":12}
+11:07:59 AM [express] POST /api/ebooks 201 in 4792ms :: {"id":3,"title":"Unlock Your Confidence","description":"The Ultimate Guide Guide for Teens to own School and Life","pdfUrl":"/uploads/ebooks/pdf-1773140878252-164634021.pdf","coverImageUrl":"/uploads/covers/coverImage-1773140874730-711734748.png","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T11:07:59.030Z"}
+11:07:59 AM [express] GET /api/ebooks 200 in 5ms :: [{"id":3,"title":"Unlock Your Confidence","description":"The Ultimate Guide Guide for Teens to own School and Life","pdfUrl":"/uploads/ebooks/pdf-1773140878252-164634021.pdf","coverImageUrl":"/uploads/covers/coverImage-1773140874730-711734748.png","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T11:07:59.030Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+12:22:19 PM [express] GET /api/ebooks 304 in 10ms :: [{"id":3,"title":"Unlock Your Confidence","description":"The Ultimate Guide Guide for Teens to own School and Life","pdfUrl":"/uploads/ebooks/pdf-1773140878252-164634021.pdf","coverImageUrl":"/uploads/covers/coverImage-1773140874730-711734748.png","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T11:07:59.030Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
+12:22:19 PM [express] POST /api/analytics/pageview 200 in 11ms :: {"success":true}
+///   12:27:44 PM [express] POST /api/analytics/pageview 200 in 9ms :: {"success":true}
+12:27:44 PM [express] GET /api/ebooks 304 in 7ms :: [{"id":3,"title":"Unlock Your Confidence","description":"The Ultimate Guide Guide for Teens to own School and Life","pdfUrl":"/uploads/ebooks/pdf-1773140878252-164634021.pdf","coverImageUrl":"/uploads/covers/coverImage-1773140874730-711734748.png","viewCount":0,"downloadCount":0,"createdAt":"2026-03-10T11:07:59.030Z"},{"id":2,"title":"Moby Dick","description":"A novel by Herman Melville.","pdfUrl":"/uploads/ebooks/dummy-ebook.pdf","coverImageUrl":"/uploads/covers/dummy-cover.jpg","viewCount":1,"downloadCount":0,"createdAt":"2026-03-10T09:27:58.530Z"}]
