@@ -54,9 +54,15 @@ export default function EbookDetail() {
           <div className="w-full lg:w-5/12 flex-shrink-0">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-neutral-900/10 border border-neutral-100 aspect-[4/5] sticky top-32">
               <img 
-                src={ebook.coverImageUrl} 
+                src={`${ebook.coverImageUrl}?v=${ebook.id}`}
                 alt={ebook.title} 
                 className="w-full h-full object-cover"
+                loading="eager"
+                onError={(e) => {
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = 'none';
+                  console.warn(`Failed to load cover image: ${ebook.coverImageUrl}`);
+                }}
               />
             </div>
           </div>

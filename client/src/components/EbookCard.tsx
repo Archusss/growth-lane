@@ -7,9 +7,15 @@ export function EbookCard({ ebook }: { ebook: Ebook }) {
     <div className="group bg-white rounded-2xl overflow-hidden card-hover flex flex-col h-full">
       <Link href={`/ebook/${ebook.id}`} className="block relative aspect-[4/5] overflow-hidden bg-neutral-100">
         <img
-          src={ebook.coverImageUrl}
+          src={`${ebook.coverImageUrl}?v=${ebook.id}`}
           alt={ebook.title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="eager"
+          onError={(e) => {
+            const img = e.target as HTMLImageElement;
+            img.style.display = 'none';
+            console.warn(`Failed to load image: ${ebook.coverImageUrl}`);
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
           <span className="text-white font-medium flex items-center gap-2">
