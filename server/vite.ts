@@ -33,6 +33,11 @@ export async function setupVite(server: Server, app: Express) {
 
   app.use("/{*path}", async (req, res, next) => {
     const url = req.originalUrl;
+    
+    // Skip Vite SPA handling for static asset paths
+    if (url.startsWith("/uploads") || url.startsWith("/api")) {
+      return next();
+    }
 
     try {
       const clientTemplate = path.resolve(
